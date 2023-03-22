@@ -39,15 +39,14 @@ let TEAM = '';
 for(let i = 0; i < Ourteam.length; i++){
 
    const myteam = Ourteam[i];
-   const layout = `<div class="col flex-flex-wrap">
-   <div class="card">
+   const layout = `<div class="col col-4">
+   <div class="card m-3 border bg-black">
        <img class="card-img-top" 
        src="/img/${myteam.image} " alt="${myteam.nome} ${myteam.cognome} ">
        
-       <div class="cad-body">
-       <div><span></span>${myteam.nome}</div>
-       <div><span></span>${myteam.cognome}</div>
-       <div><span></span>${myteam.role}</div>
+       <div class="cad-body m-2 text-center">
+       <div class="fs-5 fw-bold text-white">${myteam.nome} ${myteam.cognome}</div>
+       <div class="text-white">${myteam.role}</div>
        </div>
    </div>
 </div>`;
